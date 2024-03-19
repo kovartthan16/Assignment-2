@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /*
+  Display the title in center of the page
+  */
+  /* Path: assignment2/style.css */
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /*
+  Dislpay the form in middle of the page
+  */
+  /* Path: assignment2/style.css */
+  form {
+    margin: 0 auto;
+    max-width: 400px;
+    padding: 1em;
+  }
+  
+  form input {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 1.75em;
+  }
+  
+  /* Path: assignment2/style.css */
+  input[type='text'],
+  input[type='email'],
+  input[type='password'] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  /* Set different color to login and reset button */
+  /* Path: assignment2/style.css */
+  button[type='submit'] {
+    background-color: #4caf50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button[type='reset'] {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  /* Path: assignment2/style.css */
+  .container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  /* center align the error and success message */
+  .error,
+  .success {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* Display the error message  in red color */
+  .error {
+    color: red;
+  }
+  
+  /* Display the success message in green color */
+  .success {
+    color: green;
+  }
+  
