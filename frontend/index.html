@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment 2</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <!-- Create page header as Login -->
+    <h1>Login</h1>
+    <!--
+        Create a login form with below fields
+        Username text field
+        Password password field
+        Remember Me checkbox, call a method onRememberMeChange on change of the checkbox
+        Submit button
+        Reset button. On click clear the success and error messages, and reset the form
+
+        On submit of the form call function login and do the below validations
+        Username and Password should not be empty
+        Remember Me should be checked
+
+        If any of the above validations fail, display the error message in red color
+        Else check whether the username and password exists in users array
+        if not exists, display the error message as "nvalid credentials. Please try again." in red color
+        if exists display the success message in green color and show welcome message as "Login successful! Welcome, <Username>"
+     -->
+
+    <div id="success" class="success"></div>
+    <div id="error" class="error"></div> 
+
+    <form action="javascript:void(0);" method="POST" onsubmit="login()" novalidate>
+        <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" id="uname" name="uname" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" id="psw" name="psw" required>
+
+            <label>
+                <input type="checkbox" name="remember" onchange="onRememberMeChange()"> Remember me
+            </label>
+
+            <br />
+            <button type="submit">Login</button>
+            <button type="reset" onclick="document.getElementById('success').innerHTML = ''; document.getElementById('error').innerHTML = '';">Reset</button>
+        </div>
+    </form>
+</body>
+</html>
